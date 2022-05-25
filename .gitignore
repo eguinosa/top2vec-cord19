@@ -1,5 +1,9 @@
 # Ignore Python Environment
 venv-top2vec-cord19/
+# CORD-19 Documents, Embeddings and Data files
+cord19_data/
+# Project Data:
+project_data/
 
 # MacOS File System
 .DS_Store
