@@ -52,28 +52,4 @@ if __name__ == '__main__':
     for topic_words, word_scores, topic_id in zip(topics_words, words_scores, topic_ids):
         print(f"\nTopic #{topic_id} Words:")
         words_data = list(zip(word_scores, topic_words))
-        pprint(words_data[:20])    
-
-
-# # Import Libraries
-# import numpy as np
-# import pandas as pd
-# from top2vec import Top2Vec
-# from sklearn.datasets import fetch_20newsgroups
-
-# # Reading the Data
-# newsgroups = fetch_20newsgroups(subset='all', remove=('headers', 'footers', 'quotes'))
-
-# # print(f"\nThe type of the newsgroup is {type(newsgroups)}.")
-
-# # print("\nFirst article of the newsgroup:")
-# # print(f"\n{newsgroups.data[0]}\n")
-
-# # Training Top2Vec Model
-# model = Top2Vec(newsgroups.data, embedding_model='universal-sentence-encoder')
-
-# # Viewing the Number of Topics
-# num_topics = model.get_num_topics()
-# print(f"\nThe number of topics is: {num_topics}.\n")
-
-
+        pprint(words_data[:20])
