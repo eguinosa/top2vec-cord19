@@ -4,6 +4,7 @@ venv-top2vec-cord19/
 cord19_data/
 # Project Data:
 project_data/
+test_results/
 
 # MacOS File System
 .DS_Store
