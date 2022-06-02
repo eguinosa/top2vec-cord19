@@ -9,15 +9,20 @@ Para la implementacion del proyecto utilizamos la libreria del modelo de topicos
 
 Para ultilizar este modelo de topicos los creadores del proyecto recomiendan utilizar la clase Top2Vec dentro de la libreria instalada usando:
 
-  $ pip install top2vec
-
+```
+$ pip install top2vec
+```
 pero esta implementacion da error, sin poder encontrarle solucion a este problema, decidimos utilizar las otras dos implementaciones disponibles para Top2Vec, una utilizando un modelo pre-entrenado de Universal Sentence Encoder:
 
-  $ pip install top2vec[sentence_encodores]
+```
+$ pip install top2vec[sentence_encodores]
+```
 
 y otra utilizando un modelo BERT pre-entrenado, especificamente el modelo 'distiluse-base-multilingual-cased', este un modelo multilingüe de Universal Sentence Encoder para 15 lenguajes, Arabico, Chino, Holandes, Ingles, Frances, Aleman, Italiano, Koreano, Polaco, Portugues, Ruso, Español y Turco:
 
-  $ pip install top2vec[sentence_transformers]
+```
+$ pip install top2vec[sentence_transformers]
+```
 
 
 ## Implementación
@@ -47,6 +52,7 @@ Los resultados obtenidos varían dependiendo de la muestra tomada, en algunos ca
 En cuanto al rendimiento de los modelos utilizados ambos, BERT y Universal Sentence Encoder, tienen resultados similares con respecto al numero y la calidad de los topicos similares, siendo Universal Sentence Encoder mucho mas rapido en cuanto a la ejecución.
 
 ### Test Result 1 - 4 Tópicos
+```
 3,000 Random Papers
 [0 h : 2 min : 6 sec : 573 mill]
 
@@ -145,8 +151,10 @@ Topic #3 Words:
  (0.22369796, 'este'),
  (0.22283733, 'gastritis'),
  (0.22040346, 'meningitis')]
+```
 
 ### Test Result 2 - 18 Tópicos - Universal Sentence Encoder
+```
 3,000 Papers
 [0 h : 1 min : 58 sec : 532 mill]
 
@@ -171,8 +179,10 @@ Topic Sizes:
   Topic #15: 77
   Topic #16: 77
   Topic #17: 62
+```
 
 ### Test Result 3 - 18 Tópicos - BERT
+```
 3,000 Papers (los utilizados en Test 2)
 [0 h : 8 min : 21 sec : 595 mill]
 
@@ -197,3 +207,4 @@ Topic Sizes:
   Topic #15: 80
   Topic #16: 75
   Topic #17: 68
+```
